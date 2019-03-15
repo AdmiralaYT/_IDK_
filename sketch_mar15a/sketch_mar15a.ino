@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <Servo.h>
 
 Servo myservo1;
