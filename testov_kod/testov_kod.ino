@@ -4,7 +4,7 @@
 
 const int stepsPerRevolution = 200;
 
-Stepper stupkovMotor(stepsPerRevolution, 8, 9, 10, 11);
+Stepper stupkovMotor(stepsPerRevolution, 13, 12, 7, 4);
 
 int stepCount = 0;
 
@@ -18,16 +18,16 @@ int pos = 180;
   
 void setup() 
 {
-myservo1.attach(7);
+/*myservo1.attach(7);
 myservo2.attach(9);
 myservo3.attach(10);
 myservo4.attach(11);
-stupkovMotor.setSpeed(100);
+*/stupkovMotor.setSpeed(15);
 }
 
 void loop()
 {
- for(pos=180;pos<1;pos-=1)
+ /*for(pos=180;pos<1;pos-=1)
  
  {
   delay(15);  
@@ -35,10 +35,10 @@ void loop()
  myservo2.write(pos);
  myservo3.write(pos);
  myservo4.write(pos);
- }
+ }*/
  while (1){ 
- stupkovMotor.step(20);
-  delay(300);
+ stupkovMotor.step(2000);
+  //delay(300);
  }
 }
    

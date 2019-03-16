@@ -1,4 +1,5 @@
 #include <SoftwareSerial.h>
+
 SoftwareSerial BTserial(2, 3); // RX | TX
 // Connect the HC-06 TX to the Arduino RX on pin 2. 
 // Connect the HC-06 RX to the Arduino TX on pin 3 through a voltage divider.
@@ -19,8 +20,9 @@ void loop()
  
     // Keep reading from HC-06 and send to Arduino Serial Monitor
     if (BTserial.available())
-    {  
-        Serial.write(BTserial.read());
+    {
+        int a = BTserial.read();
+        Serial.write(a);
     }
  
     // Keep reading from Arduino Serial Monitor and send to HC-06
