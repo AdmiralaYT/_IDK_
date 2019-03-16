@@ -1,3 +1,4 @@
+
 #include <Servo.h>
 #include <Stepper.h>
 
@@ -7,13 +8,16 @@ Stepper stupkovMotor(stepsPerRevolution, 8, 9, 10, 11);
 
 int stepCount = 0;
 
-Servo myservo;
+Servo myservo1;
+Servo myservo2;
+Servo myservo3;
+Servo myservo4;
 
-int pos=180;
+
+int pos = 180;
   
 void setup() 
 {
-myservo.attach(9);
 myservo1.attach(7);
 myservo2.attach(9);
 myservo3.attach(10);
@@ -24,20 +28,17 @@ stupkovMotor.setSpeed(100);
 void loop()
 {
  for(pos=180;pos<1;pos-=1)
- {  
- myservo.write(pos);
- delay(15);
- }
- for(pos=0;pos<=180;pos++)
+ 
  {
- myservo.write(pos);
-   delay(15); 
+  delay(15);  
+ myservo1.write(pos);
+ myservo2.write(pos);
+ myservo3.write(pos);
+ myservo4.write(pos);
  }
-<<<<<<< HEAD
-}
-=======
  while (1){ 
  stupkovMotor.step(20);
   delay(300);
  }
 }
+   
