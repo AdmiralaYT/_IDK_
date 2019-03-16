@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> cd24213d39852cee0c8866b6ae9cfa4450a14416
 #include <Servo.h>
 #include <Stepper.h>
 
@@ -13,12 +17,15 @@ int pos=180;
   
 void setup() 
 {
+<<<<<<< HEAD
 myservo.attach(9);
+=======
 myservo1.attach(7);
 myservo2.attach(9);
 myservo3.attach(10);
 myservo4.attach(11);
 stupkovMotor.setSpeed(100);
+>>>>>>> cd24213d39852cee0c8866b6ae9cfa4450a14416
 }
 
 void loop()
@@ -41,3 +48,5 @@ void loop()
   delay(300);
  }
 }
+   
+>>>>>>> cd24213d39852cee0c8866b6ae9cfa4450a14416
