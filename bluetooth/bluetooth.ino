@@ -1,11 +1,11 @@
-#include <SoftwareSerial.h>
+
+ 
+ #include <SoftwareSerial.h>
 #include <stdio.h>
 SoftwareSerial BTserial(2, 3); // RX | TX
 // Connect the HC-06 TX to the Arduino RX on pin 2. 
 // Connect the HC-06 RX to the Arduino TX on pin 3 through a voltage divider.
 // 
- 
- 
 void setup() 
 {
     Serial.begin(9600);
